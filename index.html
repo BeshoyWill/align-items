@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS properties</title>
+
+        <link href="D:\courses\w3schools\CSS properties\css\all.min.css" rel="stylesheet" />
+        <link href="D:\courses\w3schools\CSS properties\css\bootstrap.min.css" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
+
+        <script src="D:\courses\w3schools\CSS properties\js\jquery-3.4.1.min.js"></script>
+        <script src="D:\courses\w3schools\CSS properties\js\popper.min.js"></script>
+        <script src="D:\courses\w3schools\CSS properties\js\bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <h1>Change align-items with JavaScript ::</h1>
+
+        <br />
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="align-items-forms">
+                        <form>
+                            <input type="radio" id="flex-start" name="align-items" value="flex-start" onclick="Flex_start()" checked />
+                            <label for="flex-start">flex-start</label>
+                            <br />
+                            <input type="radio" id="flex-end" name="align-items" value="flex-end" onclick="Flex_End()" />
+                            <label for="flex-end">flex-end</label>
+                            <br />
+                            <input type="radio" id="stretch" name="align-items" value="Stretch" onclick="Stretch()" />
+                            <label for="stretch">stretch</label>
+                            <br />
+                            <input type="radio" id="baseline" name="align-items" value="BaseLine" onclick="BaseLine()" />
+                            <label for="baseline">baseline</label>
+                            <br />
+                            <input type="radio" id="center" name="align-items" value="Center" onclick="Center()" />
+                            <label for="center">center</label>
+                            <br />
+                            <input type="radio" id="initial" name="align-items" value="Initial" onclick="Initial()" />
+                            <label for="initial">Initial</label>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="main">
+                        <div style="background-color: coral">Red</div>
+                        <div style="background-color: lightblue">Blue</div>
+                        <div style="background-color: green">Green div with more </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function Flex_start() {
+                document.getElementById("main").style.alignItems = "flex-start";
+            }
+
+            function Flex_End() {
+                document.getElementById("main").style.alignItems = "flex-end";
+            }
+
+            function Stretch() {
+                document.getElementById("main").style.alignItems = "stretch";
+            }
+
+            function BaseLine() {
+                document.getElementById("main").style.alignItems = "baseline";
+            }
+
+            function Center() {
+                document.getElementById("main").style.alignItems = "center";
+            }
+
+            function Initial() {
+                document.getElementById("main").style.alignItems = "initial";
+            }
+        </script>
+
+        <hr />
+
+        <h1>Change align-content with JavaScript ::</h1>
+
+        <br />
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="align-content-forms">
+                        <form>
+                            <input type="radio" id="space-around" name="align-content" value="space-around" onclick="Space_Around()" checked />
+                            <label for="space-around">space-around</label>
+                            <br />
+                            <input type="radio" id="space-between" name="align-content" value="space-between" onclick="Space_Between()" />
+                            <label for="space-between">space-between</label>
+                            <br />
+                            <input type="radio" id="space-evenly" name="align-content" value="space-evenly" onclick="Space_Evenly()" />
+                            <label for="space-evenly">space-evenly</label>
+                            <br />
+                            <input type="radio" id="flex-start1" name="align-content" value="flex-start1" onclick="Flex_Start1()" />
+                            <label for="flex-start1">flex-start</label>
+                            <br />
+                            <input type="radio" id="flex-end1" name="align-content" value="flex-end1" onclick="Flex_End1()" />
+                            <label for="flex-end1">flex-end</label>
+                            <br />
+                            <input type="radio" id="stretch1" name="align-content" value="Stretch1" onclick="Stretch1()" />
+                            <label for="stretch1">stretch</label>
+                            <br />
+                            <input type="radio" id="baseline1" name="align-content" value="BaseLine1" onclick="BaseLine1()" />
+                            <label for="baseline1">baseline</label>
+                            <br />
+                            <input type="radio" id="center1" name="align-content" value="Center1" onclick="Center1()" />
+                            <label for="center1">center</label>
+                            <br />
+                            <input type="radio" id="initial1" name="align-content" value="Initial1" onclick="Initial1()" />
+                            <label for="initial1">Initial</label>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="main1">
+                        <div style="background-color: coral"></div>
+                        <div style="background-color: lightblue"></div>
+                        <div style="background-color: green"></div>
+                        <div style="background-color: pink"></div>
+                        <div style="background-color: khaki"></div>
+                        <div style="background-color: lightgray"></div>
+                        <div style="background-color: yellow"></div>
+                        <div style="background-color: greenyellow"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function Space_Around() {
+                document.getElementById("main1").style.alignContent = "space-around";
+            }
+
+            function Space_Between() {
+                document.getElementById("main1").style.alignContent = "space-between";
+            }
+
+            function Space_Evenly() {
+                document.getElementById("main1").style.alignContent = "space-evenly";
+            }
+
+            function Flex_Start1() {
+                document.getElementById("main1").style.alignContent = "flex-start";
+            }
+
+            function Flex_End1() {
+                document.getElementById("main1").style.alignContent = "flex-end";
+            }
+
+            function Stretch1() {
+                document.getElementById("main1").style.alignContent = "stretch";
+            }
+
+            function BaseLine1() {
+                document.getElementById("main1").style.alignContent = "baseline";
+            }
+
+            function Center1() {
+                document.getElementById("main1").style.alignContent = "center";
+            }
+
+            function Initial1() {
+                document.getElementById("main1").style.alignContent = "initial";
+            }
+        </script>
+
+        <hr />
+
+        <h1>Change align-self with JavaScript ::</h1>
+
+        <br />
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="align-self-forms">
+                        <form>
+                            <input type="radio" id="auto" name="align-content" value="auto" onclick="Auto()" checked />
+                            <label for="auto">auto</label>
+                            <br />
+                            <input type="radio" id="flex-start2" name="align-content" value="flex-start2" onclick="Flex_Start2()" />
+                            <label for="flex-start2">flex-start</label>
+                            <br />
+                            <input type="radio" id="flex-end2" name="align-content" value="flex-end2" onclick="Flex_End2()" />
+                            <label for="flex-end2">flex-end</label>
+                            <br />
+                            <input type="radio" id="stretch2" name="align-content" value="stretch2" onclick="Stretch2()" />
+                            <label for="stretch2">stretch</label>
+                            <br />
+                            <input type="radio" id="baseline2" name="align-content" value="baseline2" onclick="BaseLine2()" />
+                            <label for="baseline2">baseline</label>
+                            <br />
+                            <input type="radio" id="center2" name="align-content" value="center2" onclick="Center2()" />
+                            <label for="center2">center</label>
+                            <br />
+                            <input type="radio" id="initial2" name="align-content" value="Initial2" onclick="Initial2()" />
+                            <label for="initial2">Initial</label>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="main2">
+                        <div style="background-color: coral">Red</div>
+                        <div style="background-color: lightblue" id="myBlueDiv">Blue</div>
+                        <div style="background-color: green">Green div with more </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function Auto() {
+                document.getElementById("myBlueDiv").style.alignSelf = "auto";
+            }
+
+            function Flex_Start2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "flex-start";
+            }
+
+            function Flex_End2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "flex-end";
+            }
+
+            function Stretch2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "stretch";
+            }
+
+            function BaseLine2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "baseline";
+            }
+
+            function Center2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "center";
+            }
+
+            function Initial2() {
+                document.getElementById("myBlueDiv").style.alignSelf = "initial";
+            }
+        </script>
+
+        <hr />
+
+        <h1>Change all property using JavaScript :: </h1>
+        
+
+        <div class="container" id="back">
+            <div class="row">
+
+                <div class="col-sm-12"  id="all-properties">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+
+                <div class="col-sm-12">
+                    <form class="all-property-forms">
+                        <input type="radio" id="no-allProperty" name="all-property" value="no-allProperty" onclick="No_allProperty()" checked/>
+                        <label for="no-allProperty">no-all Property</label>
+                        
+                        <input type="radio" id="inherit-allProperty" name="all-property" value="inherit-allProperty" onclick="Inherit_allProperty()" />
+                        <label for="inherit-allProperty">inherit-all Property</label>
+                        
+                        <input type="radio" id="Initial-allProperty" name="all-property" value="Initial-allProperty" onclick="Initial_allProperty()" />
+                        <label for="Initial-allProperty">initial-all Property</label>
+                        
+                        <input type="radio" id="Unset_allProperty" name="all-property" value="Unset_allProperty" onclick="Unset_allProperty()" />
+                        <label for="Unset_allProperty">unset-all Property</label>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            function No_allProperty() {
+                document.getElementById("all-properties").style.all= "";
+            }
+
+            function Inherit_allProperty() {
+                document.getElementById("all-properties").style.all= "inherit";
+            }
+
+            function Initial_allProperty() {
+                document.getElementById("all-properties").style.all = "initial";
+            }
+
+            function Unset_allProperty() {
+                document.getElementById("all-properties").style.all = "unset";
+            }
+        </script>
+    </body>
+</html>

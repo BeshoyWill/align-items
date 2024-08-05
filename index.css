@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container #main {
+    width: 300px;
+    height: 198px;
+    border: 3px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+
+#main div{
+    flex: 1;
+}
+
+.container .align-items-forms {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .align-items-forms input, label{
+    cursor: pointer;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+#main1 {
+    width: 220px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    border: 3px solid black;
+}
+
+#main1 div {
+    width: 70px;
+    height: 70px;
+}
+
+.align-content-forms {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.align-content-forms input, label {
+    cursor: pointer;
+}
+
+.align-self-forms {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.align-self-forms input, label{
+    cursor: pointer;
+}
+
+#main2 {
+    width: 220px;
+    height: 298px;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+}
+
+#main2 div {
+    flex: 1;
+}
+
+#myBlueDiv {
+    align-self: auto;
+}
+
+#back {
+    font-size: small;
+    color: blue;
+    background-color: gray;
+    padding: 15px;
+}
+
+#all-properties {
+    color: red;
+    background-color: yellow;
+}
+
+.all-property-forms {
+    margin: 2rem;
+}
+
+.all-property-forms input, label{
+    cursor: pointer;
+}
